@@ -1,613 +1,452 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/assets/logo/favicon.ico?v=1">
+<link rel="shortcut icon" href="/assets/logo/favicon.ico?v=1">
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Jain - Salesforce & Full Stack Architect</title>
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar"> 
+        <div class="logo">Arun Jain</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-label">Salesforce & Full Stack Developer</div>
+            <h1>Building Tomorrow's<br>Cloud Solutions</h1>
+            <p class="hero-tagline">
+                I architect scalable Salesforce solutions and full-stack applications that transform business operations.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Let's Connect</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="section-label">Get to know me</div>
+        <h2 class="section-title">Transforming Ideas Into Reality</h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="./assets/images/portfolio/Arun Jain.jpg" alt="Arun Jain">
+            </div>
+            <div class="about-content">
+                <h3>Salesforce Developer with a Vision</h3>
+                <p>
+                    With 2 years at Motherson Technology Services, I specialize in Salesforce solutions that excel. My expertise spans Apex, Lightning Web Components, and API integrations that automate complex workflows.
+                </p>
+                <p>
+                    I bridge the gap between Salesforce and modern web development with MERN stack proficiency, creating end-to-end solutions that deliver exceptional user experiences.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">90%+</div>
+                        <div class="stat-label">Test Coverage</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25%</div>
+                        <div class="stat-label">Efficiency Boost</div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/arunjain27" target="_blank" aria-label="GitHub">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arunjain27" target="_blank" aria-label="LinkedIn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/arunjain2704/" target="_blank" aria-label="Instagram">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100009855137195" target="_blank" aria-label="Facebook">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+        <div class="section-label">What I bring to the table</div>
+        <h2 class="section-title">Expertise Across Platforms</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Salesforce Development</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Apex Programming</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Lightning Web Components</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">SOQL/SOSL & Salesforce Flow</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">REST API & Integration</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Asynchronous Apex</span>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="82"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Salesforce Administration</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Full Stack Development</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript & React.js</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Node.js & Express</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">MongoDB & MySQL</span>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML5, CSS3 & Bootstrap</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">C/C++</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+        <div class="section-label">Career journey</div>
+        <h2 class="section-title">Building Impact</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-date">July 2024 - Present</div>
+                <h3 class="experience-title">Salesforce Developer</h3>
+                <p class="experience-company">Motherson Technology Services Limited</p>
+                <p class="experience-description">
+                    Integrated external REST APIs using Apex, reducing manual effort by 25%. Designed offline data sync for field users and implemented real-time geolocation tracking with LWC.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-date">March 2023 - September 2023</div>
+                <h3 class="experience-title">Freelance Website Developer</h3>
+                <p class="experience-company">Bunch of Your Joy</p>
+                <p class="experience-description">
+                    Built scalable e-commerce website increasing conversions by 35%. Developed admin portal reducing manual updates by 50%.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-date">July 2023 - August 2023</div>
+                <h3 class="experience-title">Web Developer Intern</h3>
+                <p class="experience-company">Mirus Solutions Pvt Ltd.</p>
+                <p class="experience-description">
+                    Created responsive web applications with 96% accessibility score. Enhanced UX leading to 20% increase in satisfaction.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <div class="section-label">Featured work</div>
+        <h2 class="section-title">Projects That Solve Problems</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./assets/images/portfolio/hospital.jpg" alt="Hospital System" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">AI Hospital Management</h3>
+                    <p class="project-tech">Salesforce + Gemini API</p>
+                    <p class="project-description">
+                        Integrated Gemini API to analyze patient problems and automate doctor assignments, reducing manual effort by 40%.
+                    </p>
+                    <a href="#" class="project-link">View Case Study →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/images/portfolio/new notebook.jpeg" alt="Thinkio Platform" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Thinkio - AI Blog Platform</h3>
+                    <p class="project-tech">MERN Stack + Gemini AI</p>
+                    <p class="project-description">
+                        Full-stack blogging platform with AI-powered content generation. Built with React.js, Node.js, Express.js, and MongoDB.
+                    </p>
+                    <a href="https://thinkio.vercel.app/" target="_blank" class="project-link">Visit Website →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/images/portfolio/New newsbook.webp" alt="NewsBook" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">NewsBook - News Aggregator</h3>
+                    <p class="project-tech">React.js Application</p>
+                    <p class="project-description">
+                        News aggregation platform delivering real-time updates across multiple categories with responsive design.
+                    </p>
+                    <a href="http://github.com/arunjain27/News" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+        <div class="section-label">Academic background</div>
+        <h2 class="section-title">Education & Qualifications</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <p class="education-year">2020 - 2024</p>
+                <h3 class="education-degree">Bachelor of Technology</h3>
+                <p class="education-school">Computer Science<br>Inderprastha Engineering College</p>
+            </div>
+            <div class="education-card">
+                <p class="education-year">2019 - 2020</p>
+                <h3 class="education-degree">Senior Secondary</h3>
+                <p class="education-school">Class 12<br>Laxmi Public School, Delhi</p>
+            </div>
+            <div class="education-card">
+                <p class="education-year">2017 - 2018</p>
+                <h3 class="education-degree">High School</h3>
+                <p class="education-school">Class 10<br>Laxmi Public School, Delhi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Let's Build Something Great</h2>
+        <div class="contact-content">
+            <p class="hero-tagline">
+                Looking for a Salesforce expert or full-stack developer? Let's transform your vision into reality.
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <p class="contact-label">Email</p>
+                    <p class="contact-value"><a href="mailto:arunjain2704@gmail.com">arunjain2704@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <p class="contact-label">Phone</p>
+                    <p class="contact-value"><a href="tel:+917042627580">+91 7042627580</a></p>
+                </div>
+            </div>
+            <a href="mailto:arunjain2704@gmail.com" class="btn-primary">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2025 Arun Jain. Crafted with precision.</p>
+            <div class="social-links">
+                <a href="https://github.com/arunjain27" target="_blank" aria-label="GitHub">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/arunjain27" target="_blank" aria-label="LinkedIn">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                follower.style.left = e.clientX + 'px';
+                follower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll reveal animation
+        const reveals = document.querySelectorAll('.reveal');
         
-        <!-- title of site -->
-        <title>Arun Jain - Salesforce & Full Stack Developer</title>
+        const revealOnScroll = () => {
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="./assets/logo/favicon.ico"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+        // Skill bar animation with proper width setting
+        const animateSkills = () => {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            
+            skillBars.forEach(bar => {
+                const barTop = bar.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (barTop < windowHeight - 100 && !bar.classList.contains('animated')) {
+                    const width = bar.getAttribute('data-width');
+                    bar.style.width = '0%';
+                    
+                    setTimeout(() => {
+                        bar.style.width = width + '%';
+                        bar.classList.add('animated');
+                    }, 200);
+                }
+            });
+        };
 
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
-	
-	<body>
-	
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-
-			        <div class="container">
-
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="#welcome-hero">Arun Jain</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-			                <li class=" smooth-menu"><a href="#about">about</a></li>  
-							<li class=" smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-			                    <li class="smooth-menu"><a href="#portfolio">projects</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-
-		    <div class="clearfix"></div>
-
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi i am <span>,</span> <br> Arun Jain</h2>
-							<p style="font-size: 3rem; font-weight: 400;">
-								Building reliable, scalable solutions across Salesforce and full-stack platforms with expertise in cloud integrations and modern web technologies.</p>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
-
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
-
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2 style="padding-top: 100px;">about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<h3>
-									I am a Salesforce Developer with 2 years of experience in designing and delivering business-focused solutions on the Salesforce platform. Currently at Motherson Technology Services Limited, I bring strong hands-on experience with Apex and Lightning Web Components (LWC), including system integrations, automation, and mobile-first implementations.
-									<br><br>
-									I specialize in integrating external REST APIs using Apex to automate workflows, building custom offline data synchronization for field users, and implementing real-time geolocation tracking. I consistently achieve over 90% test coverage while meeting Salesforce best practices.
-									<br><br>
-									Beyond Salesforce, I possess comprehensive skills in the MERN stack (MongoDB, Express.js, React.js, Node.js), allowing me to bridge cloud platforms with modern web technologies. I'm recognized for building reliable, scalable solutions that improve operational efficiency while maintaining high standards of data accuracy and system stability.
-								</h3>
-								
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>+91 7042627580</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>arunjain2704@gmail.com</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="./assets/images/portfolio/Arun Jain.jpg" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
-										<li>
-											<a href="https://www.facebook.com/profile.php?id=100009855137195" target="_blank">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li>
-											<a href="https://www.linkedin.com/in/arunjain27" target="_blank">
-												<i class="fa fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/arunjain2704/" target="_blank">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li>
-											<a href="https://github.com/arunjain27" target="_blank">
-												<i class="fa fa-github" aria-hidden="true"></i>
-											</a>
-										</li>
-										
-									</ul><!-- / ul -->
-								</div><!-- /.about-list-icon -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
-		<!--education start -->
-		<section id="education" class="education">
-			<div class="section-heading text-center">
-				<h2 style="padding-top: 100px;">education</h2>
-			</div>
-			<div class="container">
-				<div class="education-horizontal-timeline">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>April 2017 - April 2018</h2>
-									<h3>High School</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Laxmi Public School
-										</h4>
-										<h5>Delhi, India</h5>
-										<p class="description">
-											<h3>Class 10 Education</h3>	
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>April 2019 - April 2020</h2>
-									<h3>Senior Secondary</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Laxmi Public School
-										</h4>
-										<h5>Delhi, India</h5>
-										<p class="description">
-											<h3>Class 12 Education</h3>	
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>April 2020 - April 2024</h2>
-									<h3>Bachelor <span>of</span> Technology</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal spacial-horizontal-line"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Inderprastha Engineering College
-										</h4>
-										<h5>Computer Science</h5>
-										<p class="description">
-											<h3>Ghaziabad, U.P</h3>	
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section><!--/.education-->
-		<!--education end -->
-
-		<!--skills start -->
-		<section id="skills" class="skills">
-				<div class="skill-content">
-					<div class="section-heading text-center">
-						<h2 style="padding-top: 100px;">skills</h2>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">Apex Programming</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Lightning Web Components (LWC)</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>88%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">SOQL/SOSL & Salesforce Flow</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">REST API & Integration</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>88%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Asynchronous Apex</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>82%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Salesforce Administration</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>80%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">JavaScript & React.js</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												</div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Node.js & Express</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>80%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">MongoDB & MySQL</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>78%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">HTML5, CSS3 & Bootstrap</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Git & GitHub</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">C/C++</span>
-										<div class="single-progress-txt">
-											<div class="progress">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
-											   </div>
-											</div>
-											<h3>75%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
-				</div><!-- /.skill-content-->
-
-		</section><!--/.skills-->
-		<!--skills end -->
-
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2 style="padding-top: 100px;">experience</h2>
-			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>July 2024 - Present</h2>
-													<h3>Full-time</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Salesforce Developer
-														</h4>
-														<h5>Motherson Technology Services Limited, Noida</h5>
-														<p class="description">
-															Integrated external REST APIs using Apex to automate decision-based workflows, reducing manual review effort and improving approval turnaround time by 25%. Designed custom offline data synchronization logic to support field users, enabling reliable data capture and image uploads during low or no connectivity. Implemented real-time geolocation tracking using LWC, providing management with accurate visibility into field activities. Built optimized Lightning Web Components with seamless REST API integrations to ensure smooth data exchange and responsive user interfaces.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														July 2023 - August 2023
-													</h2>
-													<h3>Internship</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Web Developer Intern
-														</h4>
-														<h5><a style="color: blue; text-decoration: underline;" href="https://www.mirus.in/" target="_blank">Mirus Solutions Pvt Ltd.</a></h5>
-														<p class="description">
-															Created a responsive web application using HTML, CSS, and JavaScript, achieving a 96% accessibility score and a 90% SEO performance rating. Designed and launched a mobile-responsive website using WIX, contributing to a 25% increase in mobile user traffic. Enhanced overall user experience through UI and usability improvements, leading to a 20% increase in customer satisfaction.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														July 2023 - August 2023
-													</h2>
-													<h3>Web Developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>March 2023 - September 2023</h2>
-													<h3>Freelance</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Website Development
-														</h4>
-														<h5><a style="color: blue; text-decoration: underline;" href="https://shopbunchofyourjoy.wixsite.com/bunch-of-our-joy" target="_blank">Bunch of Your Joy</a></h5>
-														<p class="description">
-															Delivered a scalable e-commerce website for gifts and stationery using HTML, JavaScript, and modern web technologies, increasing conversion rates by 35%. Implemented an admin portal to manage products and content updates efficiently, reducing manual update effort by 50%. Optimized website performance and load times, improving user engagement and reducing bounce rates by 18%.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-							</ul>
-						</div>
-				</div>
-			</div>
-		</section><!--/.experience-->
-		<!--experience end -->
-
-		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2 style="padding-top: 100px;">projects</h2>
-				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
-							<div class="row">
-
-								<div class="col-sm-4">
-									<div class="item">
-										<h5 style="text-align: center;">Hospital Appointment & Doctor Recommendation System</h5>
-										<img src="./assets/images/portfolio/hospital.jpg" alt="hospital appointment system" style="width: 100%; height: 250px; object-fit: cover;"/>
-										<div class="isotope-overlay" style="display: flex; flex-direction: column;">
-											<a href="#">
-												Salesforce + Gemini API Integration
-											</a>
-											<p style="font-size: 1rem; color: aliceblue; text-align:center;">
-												Built a hospital appointment system where patient details and problems are entered by hospital staff during registration. Used Gemini API to analyze patient problems and classify them into relevant medical categories. Developed logic to suggest suitable doctors based on the identified category and patient requirements. Validated doctor availability by checking schedules stored in a custom object before confirming appointments, minimizing manual effort in doctor assignment and improving appointment accuracy through automated checks.
-											</p>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-
-								<div class="col-sm-4">
-									<div class="item">
-										<h5 style="text-align: center;">Thinkio - AI-Powered Blog Platform</h5>
-										<img src="./assets/images/portfolio/new notebook.jpeg" alt="blog platform"/>
-										<div class="isotope-overlay" style="display: flex; flex-direction: column;">
-											<a href="https://thinkio.vercel.app/" target="_blank">
-												MERN Stack + Gemini AI
-											</a>
-											<a href="https://thinkio.vercel.app/" target="_blank" style="font-size: 1rem; color: aliceblue; text-align:center;">
-												Full-stack blogging platform built with MERN stack featuring AI-powered content generation using Gemini 1 Pro. Empowers bloggers with a user-friendly platform allowing seamless blog creation and content generation, fostering creativity and efficiency in sharing ideas. Includes streamlined media management via Cloudinary to enhance user engagement and optimize content presentation. Technologies: React.js, Node.js, Express.js, MongoDB, Gemini API, Cloudinary.
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-
-								<div class="col-sm-4">
-									<div class="item">
-										<h5 style="text-align: center;">NewsBook - Real-Time News Aggregator</h5>
-										<img src="./assets/images/portfolio/New newsbook.webp" alt="newsbook website"/>
-										<div class="isotope-overlay" style="display: flex; flex-direction: column;">
-											<a href="http://github.com/arunjain27/News" target="_blank">
-												React.js Application
-											</a>
-											<a  href="http://github.com/arunjain27/News" target="_blank" style="font-size: 1rem; color: aliceblue; text-align:center;">
-												News aggregation website that gives all the latest news to users regarding all categories like Sports, Technology, Entertainment, Business, and more. Built using React.js with Fetch API integration for real-time news updates. Features responsive design with category-based filtering and dynamic content loading. Provides users with comprehensive access to current events and information across multiple domains.
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
-
-		</section><!--/.portfolio-->
-		<!--portfolio end -->
-
-		<!-- Footer -->
-		<footer class="text-center text-lg-start bg-body-dark text-muted" style="padding: 20px 0; margin-top: 50px;">
-			<div class="container text-center">
-				<p style="margin: 0; color: #999;">&copy; 2025 Arun Jain. All rights reserved.</p>
-			</div>
-		</footer>
-
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
-
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
-
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
-
-		<!-- for progress bar end -->
-
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+        window.addEventListener('scroll', animateSkills);
+        window.addEventListener('load', animateSkills);
+    </script>
+</body>
 </html>
