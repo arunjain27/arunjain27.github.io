@@ -27,7 +27,6 @@
             overflow-x: hidden;
             line-height: 1.6;
             position: relative;
-             padding-top: 30px;
         }
 
         /* Custom Cursor - Desktop Only */
@@ -157,17 +156,17 @@
             width: 100%;
         }
 
-        /* Hero Section */
+        /* Hero Section - Fixed for mobile */
         .hero {
-          min-height: calc(var(--vh, 1vh) * 100);
-    padding:  60px 5% 40px; /* reduced by HALF *//* fallback */
+            min-height: 100vh;
+            min-height: 100dvh;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             overflow: hidden;
+            padding: 80px 5% 40px;
         }
-
 
         .hero-bg {
             position: absolute;
@@ -458,82 +457,64 @@
 
         /* Experience Section */
         .experience-timeline {
-    position: relative;
-    padding-left: 4rem; /* keeps timeline inside screen */
-}
+            position: relative;
+            padding-left: 3rem;
+        }
 
-/* Vertical Line */
-.experience-timeline::before {
-    content: '';
-    position: absolute;
-    left: 1.5rem; /* moved inside so it never clips */
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(
-        180deg,
-        var(--accent) 0%,
-        rgba(99, 102, 241, 0.4) 60%,
-        transparent 100%
-    );
-    box-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
-}
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
+        }
 
-/* Each Experience Item */
-.experience-item {
-    position: relative;
-    margin-bottom: 4rem;
-    padding-left: 2rem;
-}
+        .experience-item {
+            position: relative;
+            margin-bottom: 4rem;
+            padding-left: 2rem;
+        }
 
-/* Timeline Dot */
-.experience-item::before {
-    content: '';
-    position: absolute;
-    left: -2.2rem; /* perfectly aligned with line */
-    top: 0.4rem;
-    width: 12px;
-    height: 12px;
-    background: var(--accent);
-    border-radius: 50%;
-    box-shadow:
-        0 0 0 4px rgba(99, 102, 241, 0.25),
-        0 0 12px rgba(99, 102, 241, 0.6);
-}
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -3.5rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+        }
 
-/* Date Badge */
-.experience-date {
-    display: inline-block;
-    padding: 0.4rem 1.2rem;
-    background: rgba(99, 102, 241, 0.15);
-    border-radius: 20px;
-    font-size: 0.85rem;
-    color: var(--accent);
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
+        .experience-date {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
 
-/* Title */
-.experience-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.4rem;
-    color: var(--text-primary);
-}
+        .experience-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
 
-/* Company */
-.experience-company {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
+        .experience-company {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
 
-/* Description */
-.experience-description {
-    color: var(--text-secondary);
-    line-height: 1.8;
-    max-width: 650px;
-}
-
+        .experience-description {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
 
         /* Projects Section */
         .projects-grid {
@@ -561,6 +542,13 @@
             height: 250px;
             object-fit: cover;
             transition: transform 0.4s ease;
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
         }
 
         .project-card:hover .project-image {
@@ -768,7 +756,6 @@
                 gap: 2rem;
                 transition: right 0.4s ease;
                 border-left: 1px solid rgba(255, 255, 255, 0.1);
-                z-index: 999;
             }
 
             .nav-links.active {
@@ -798,8 +785,8 @@
             }
 
             .hero {
-               padding: 40px 5% 32px; /* MUCH smaller */
-        min-height: calc(100vh - 56px);
+                padding: 100px 5% 60px;
+                min-height: calc(100vh - 80px);
             }
 
             .hero h1 {
@@ -873,41 +860,6 @@
                 display: none;
             }
         }
-@media (max-width: 768px) {
-
-     body {
-        padding-top: 30px;
-    }
-    .experience-timeline {
-        padding-left: 3rem;
-    }
-
-    .experience-timeline::before {
-        left: 1rem; /* keep fully visible */
-    }
-
-    .experience-item {
-        padding-left: 1.5rem;
-    }
-
-    .experience-item::before {
-        left: -1.6rem;
-        width: 10px;
-        height: 10px;
-    }
-
-    .experience-title {
-        font-size: 1.25rem;
-    }
-
-    .experience-company {
-        font-size: 0.95rem;
-    }
-
-    .experience-description {
-        font-size: 0.95rem;
-    }
-}
 
         @media (max-width: 480px) {
             nav {
