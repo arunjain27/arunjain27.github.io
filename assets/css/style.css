@@ -27,7 +27,7 @@
             overflow-x: hidden;
             line-height: 1.6;
             position: relative;
-             padding-top: 88px;
+             padding-top: 30px;
         }
 
         /* Custom Cursor - Desktop Only */
@@ -160,13 +160,14 @@
         /* Hero Section */
         .hero {
           min-height: calc(var(--vh, 1vh) * 100);
-    padding: 120px 5% 40px;/* fallback */
+    padding:  60px 5% 40px; /* reduced by HALF *//* fallback */
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             overflow: hidden;
         }
+
 
         .hero-bg {
             position: absolute;
@@ -797,8 +798,8 @@
             }
 
             .hero {
-                padding: 120px 5% 40px;
-                min-height: calc(100vh - 60px);
+               padding: 40px 5% 32px; /* MUCH smaller */
+        min-height: calc(100vh - 56px);
             }
 
             .hero h1 {
@@ -875,7 +876,7 @@
 @media (max-width: 768px) {
 
      body {
-        padding-top: 72px;
+        padding-top: 30px;
     }
     .experience-timeline {
         padding-left: 3rem;
