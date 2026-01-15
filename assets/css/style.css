@@ -877,6 +877,14 @@
      body {
         padding-top: 10px;
     }
+      .hero-content {
+            max-width: 1200px;
+            z-index: 1;
+            text-align: center;
+            width: 100%;
+            margin-top: -70px;
+        }
+
     .experience-timeline {
         padding-left: 3rem;
     }
@@ -929,6 +937,13 @@
                 padding: 3rem 4%;
             }
 
+            .hero-content {
+            max-width: 1200px;
+            z-index: 1;
+            text-align: center;
+            width: 100%;
+            margin-top: -40px;
+        }
             .btn-primary, .btn-secondary {
                 padding: 0.9rem 1.8rem;
                 font-size: 0.95rem;
