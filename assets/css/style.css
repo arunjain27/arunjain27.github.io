@@ -164,18 +164,19 @@
      /* Hero Section - CRITICAL FIX */
 .hero {
     /* Use dynamic viewport height for mobile */
-    min-height: calc(100svh - var(--nav-height));
-    
-    /* Flexbox centers content without manual positioning */
+
+    min-height: calc(var(--app-height) - var(--nav-height));
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 5% 40px;
+
     
     position: relative;
     overflow: hidden;
     
     /* Account for fixed navbar - consistent padding */
-   padding: 0 5% 40px;
+  
 }
 
         .hero-bg {

@@ -374,6 +374,27 @@
     </footer>
 
     <script>
+function setAppHeight() {
+    const vh = window.innerHeight;
+    document.documentElement.style.setProperty('--app-height', `${vh}px`);
+}
+
+// Run on load
+window.addEventListener('load', () => {
+    setTimeout(setAppHeight, 100);
+});
+
+// Run on orientation change
+window.addEventListener('orientationchange', () => {
+    setTimeout(setAppHeight, 100);
+});
+
+// OPTIONAL: resize (safe)
+window.addEventListener('resize', () => {
+    setAppHeight();
+});
+
+
  const reveals = document.querySelectorAll('.reveal');
 
 const revealOnScroll = () => {
