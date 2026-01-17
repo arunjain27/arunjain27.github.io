@@ -392,8 +392,12 @@ const revealOnScroll = () => {
     });
 };
 
-document.addEventListener('DOMContentLoaded', revealOnScroll);
-window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        revealOnScroll();
+        animateSkills();
+    }, 100);
+});window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
 
@@ -406,9 +410,8 @@ window.addEventListener('load', revealOnScroll);
         navLinks.classList.toggle('active');
 
         // Prevent background scroll when menu is open
-        document.body.style.overflow = navLinks.classList.contains('active')
-            ? 'hidden'
-            : '';
+       document.body.classList.toggle('menu-open');
+
     });
 
     // Close menu when any link is clicked (mobile UX)

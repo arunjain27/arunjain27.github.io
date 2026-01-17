@@ -80,9 +80,11 @@
             transition: all 0.3s ease;
         }
 
-        nav.scrolled {
-            padding: 1rem 5%;
-        }
+     body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
 
         .logo {
             font-size: 1.5rem;
@@ -162,8 +164,7 @@
      /* Hero Section - CRITICAL FIX */
 .hero {
     /* Use dynamic viewport height for mobile */
-    min-height: 100vh;
-    min-height: 100dvh; /* iOS Safari fix */
+    min-height: calc(100svh - var(--nav-height));
     
     /* Flexbox centers content without manual positioning */
     display: flex;
@@ -174,7 +175,7 @@
     overflow: hidden;
     
     /* Account for fixed navbar - consistent padding */
-    padding: calc(var(--nav-height, 70px) + 40px) 5% 40px;
+   padding: 0 5% 40px;
 }
 
         .hero-bg {
