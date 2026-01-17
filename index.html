@@ -2,10 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <link rel="icon" href="/assets/logo/favicon.ico?v=1">
     <link rel="shortcut icon" href="/assets/logo/favicon.ico?v=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+(function () {
+    function setAppHeight() {
+        document.documentElement.style.setProperty(
+            '--app-height',
+            window.innerHeight + 'px'
+        );
+    }
+
+    // Run immediately
+    setAppHeight();
+
+    // Re-run after load (Chrome needs this)
+    window.addEventListener('load', () => {
+        setTimeout(setAppHeight, 50);
+    });
+
+    // Re-run on orientation change
+    window.addEventListener('orientationchange', () => {
+        setTimeout(setAppHeight, 50);
+    });
+})();
+</script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Arun Jain - Salesforce & Full Stack Architect</title>
@@ -374,21 +399,6 @@
     </footer>
 
     <script>
-function setAppHeight() {
-    const vh = window.innerHeight;
-    document.documentElement.style.setProperty('--app-height', `${vh}px`);
-}
-
-// Run on load
-window.addEventListener('load', () => {
-    setTimeout(setAppHeight, 100);
-});
-
-// Run on orientation change
-window.addEventListener('orientationchange', () => {
-    setTimeout(setAppHeight, 100);
-});
-
 // OPTIONAL: resize (safe)
 window.addEventListener('resize', () => {
     setAppHeight();
