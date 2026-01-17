@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <link rel="icon" href="/assets/logo/favicon.ico?v=1">
     <link rel="shortcut icon" href="/assets/logo/favicon.ico?v=1">
     <meta charset="UTF-8">
@@ -399,70 +398,92 @@
     </footer>
 
     <script>
-// OPTIONAL: resize (safe)
-window.addEventListener('resize', () => {
-    setAppHeight();
-});
-
-
- const reveals = document.querySelectorAll('.reveal');
-
-const revealOnScroll = () => {
-    reveals.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        
-        if (elementTop < windowHeight - 100) {
-            element.classList.add('active');
-        } else {
-            // Only add animating class after first render
-            if (document.readyState === 'complete') {
-                element.classList.add('animating');
-            }
-        }
-    });
-};
-
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        revealOnScroll();
-        animateSkills();
-    }, 100);
-});window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
-
-
-         const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-
-    // Toggle menu open/close
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-
-        // Prevent background scroll when menu is open
-       document.body.classList.toggle('menu-open');
-
-    });
-
-    // Close menu when any link is clicked (mobile UX)
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            document.body.style.overflow = '';
+        // OPTIONAL: resize (safe)
+        window.addEventListener('resize', () => {
+            const setAppHeight = () => {
+                document.documentElement.style.setProperty(
+                    '--app-height',
+                    window.innerHeight + 'px'
+                );
+            };
+            setAppHeight();
         });
-    });
 
-    // Close menu on resize to desktop
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 968) {
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = () => {
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                } else {
+                    if (document.readyState === 'complete') {
+                        element.classList.add('animating');
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                revealOnScroll();
+                animateSkills();
+            }, 100);
+        });
+        
+        window.addEventListener('scroll', revealOnScroll);
+
+        // Hamburger menu - FIXED
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        // Function to close menu
+        function closeMenu() {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
-            document.body.style.overflow = '';
+            document.body.classList.remove('menu-open');
         }
-    });
-        // Custom Cursor
+
+        // Toggle menu
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when link is clicked and scroll to section
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                
+                // Close menu first
+                closeMenu();
+                
+                // Wait for menu animation to complete, then scroll
+                setTimeout(() => {
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }, 300); // Match this with your CSS transition time
+            });
+        });
+
+        // Close menu on resize to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 968) {
+                closeMenu();
+            }
+        });
+
         const cursor = document.querySelector('.cursor');
         const follower = document.querySelector('.cursor-follower');
 
@@ -476,7 +497,6 @@ window.addEventListener('load', revealOnScroll);
             }, 100);
         });
 
-        // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
@@ -486,10 +506,7 @@ window.addEventListener('load', revealOnScroll);
             }
         });
 
-        // Scroll reveal animation
-      
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="#"]:not(.nav-links a)').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
